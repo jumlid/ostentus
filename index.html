@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+
+            <button class="nav" id="home">Home</button>
+            <button class="nav" id="About">About</button>
+            <button class="nav" id="Project">Project</button>
+            <button class="nav" id="contact">Contact</button>
+        </nav>
+        <div class="top">
+            <h1 id="h1">ostentus</h1>
+        </div>
+
+        <div class="content">
+            <div class="home">
+                <h2>
+                    Hello, I'm <br>
+                    a Front end Developer
+                    <p id="info">bla bla bla bla bla bla bla bla bla bla bla bla bla <br>bla bla bla bla bla bla bla bla
+                        bla
+                    </p>
+                    <button id="me">More about me..</button>
+                </h2>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(35, 39, 60);
+            font-family: sans-serif;
+        }
+
+        .container {
+            border: 1px solid red transparent;
+            height: 100vh;
+
+        }
+
+        .content {
+            position: relative;
+            border: 1px solid red transparent;
+            height: 100vh;
+        }
+
+        nav {
+            position: relative;
+            width: 100vw;
+
+            border: 1px solid red transparent;
+            height: 65px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background-color: rgba(26, 29, 43, 0.78);
+        }
+
+        .top {
+            position: relative;
+            top: -55px;
+            width: fit-content;
+            border: 1px solid red transparent;
+            background-color: none;
+            height: 55px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-left: 120px;
+
+        }
+
+
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+
+
+        }
+
+        .nav {
+            position: relative;
+            margin-right: 30px;
+            height: 100%;
+            width: 80px;
+
+
+        }
+
+        .nav:last-child {
+            margin-right: 120px;
+        }
+
+        .nav:hover {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            background-color: rgb(35, 39, 60);
+
+        }
+
+        #h1 {
+            color: white;
+            margin: 32px;
+        }
+
+        .home {
+            height: 100vh;
+            border: 1px solid red transparent;
+
+
+        }
+
+        h2 {
+            position: relative;
+            color: white;
+
+            margin-left: 150px;
+            margin-top: 70px;
+            font-size: 65px;
+        }
+
+        #info {
+            font-size: 16px;
+            color: rgba(199, 201, 210, 0.895);
+        }
+
+        #me {
+            border: 1px solid red transparent;
+            width: 250px;
+            height: 60px;
+            background-color: brown;
+        }
+
+        @media screen and (width <=1300px) {
+            .nav.nav:last-child {
+                margin-right: 20px;
+
+            }
+
+            .nav {
+                margin-right: 0;
+                font-size: 14px;
+
+            }
+
+            #h1 {
+                color: white;
+                margin: -65px;
+            }
+
+            h2 {
+                position: relative;
+                color: white;
+                margin-left: 50px;
+                margin-top: 70px;
+                font-size: 45px;
+            }
+
+            #info {
+                font-size: 14px;
+                color: rgba(199, 201, 210, 0.895);
+            }
+
+            #me {
+                border: 1px solid red transparent;
+                width: 200px;
+                height: 60px;
+                background-color: brown;
+            }
+        }
+
+        @media screen and (width <=580px) {
+            .nav.nav:last-child {
+                margin-right: 10px;
+                width: 55px;
+
+            }
+
+            .nav {
+                position: relative;
+                margin-right: 0;
+                font-size: 13px;
+                width: fit-content;
+
+            }
+
+            .top {
+                position: relative;
+                border: 1px solid red transparent;
+                width: fit-content;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                font-size: 10px;
+                margin-left: 10px;
+
+            }
+
+            #h1 {
+                position: relative;
+                border: 1px solid red transparent;
+                color: white;
+                margin: 0;
+                font-size: 25px;
+                margin-left: 30px;
+                top: -6px;
+
+            }
+
+            h2 {
+                position: relative;
+                color: white;
+                margin-left: 40px;
+                margin-top: 20px;
+                font-size: 25px;
+            }
+
+            #info {
+                font-size: 10px;
+                color: rgba(199, 201, 210, 0.895);
+            }
+
+            #me {
+                border: 1px solid red transparent;
+                width: 100px;
+                height: 30px;
+                font-size: 10px;
+                background-color: brown;
+            }
+
+
+        }
+    </style>
+</body>
+
+</html>
