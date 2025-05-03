@@ -10,11 +10,15 @@
 <body>
     <div class="container">
         <nav>
+            <a href="#home">Home</a><a href="#about">About</a><a href="#project"></a><a href="#contact">Contact</a>
+            <!--
 
-            <button class="nav" id="home">Home</button>
+ <button class="nav" id="home">Home</button>
             <button class="nav" id="About">About</button>
             <button class="nav" id="Project">Project</button>
             <button class="nav" id="contact">Contact</button>
+-->
+
         </nav>
         <div class="top">
             <h1 id="h1">ostentus</h1>
@@ -24,41 +28,121 @@
             <div class="home">
                 <h2>
                     Hello, I'm <br>
-                    a Front end Developer
-                    <p id="info">bla bla bla bla bla bla bla bla bla bla bla bla bla <br>bla bla bla bla bla bla bla bla
-                        bla
+                    Jumli web developer
+                    <p id="info">I usaually work with Nodejs,Javascript,Discord.JS. <br>I like making cool stuff using
+                        REST API
                     </p>
                     <button id="me">More about me..</button>
                 </h2>
 
             </div>
+            <div class="about" id="about">
+                <div class="info">
+                    <div class="pic">
+                        <img src="src/148221429.jpeg" alt="">
+                        <p style="text-align: justify; color: white;"> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nulla assumenda dolorem quos est voluptas aliquid odio natus fuga
+                            distinctio earum iste atque voluptatibus exercitationem, consequuntur in inventore, a omnis
+                            laudantium?</p>
+                    </div>
+
+                </div>
+                <div class="tech">
+                    <div class="topic">
+                        <h3>Technology i have worked with</h3>
+                    </div>
+                    <div class="lang"></div>
+                </div>
+
+            </div>
+            <div class="project"></div>
+            <div class="contact"></div>
 
 
 
         </div>
+
     </div>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body {
             margin: 0;
             background-color: rgb(35, 39, 60);
             font-family: sans-serif;
         }
 
+        .about {
+
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgba(0, 0, 0, 0.301);
+        }
+
+        .info {
+
+            width: 600px;
+            height: 500px;
+            display: flex;
+
+        }
+
+        .tech {
+            border: 1px solid red;
+            width: 600px;
+            height: 500px;
+        }
+
+        .topic {
+            border: 1px solid red;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topic h3 {
+            color: white;
+            text-align: center;
+        }
+
+        .pic {
+            border: 1px solid red;
+            height: 60%;
+            width: 100%;
+
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            border-radius: 50%;
+            border: 1px solid red;
+
+        }
+
         .container {
             border: 1px solid red transparent;
-            height: 100vh;
+            height: fit-content;
 
         }
 
         .content {
             position: relative;
             border: 1px solid red transparent;
-            height: 100vh;
+            height: fit-content;
         }
 
         nav {
             position: relative;
-            width: 100vw;
+            width: 100%;
 
             border: 1px solid red transparent;
             height: 65px;
@@ -93,9 +177,21 @@
 
         }
 
+        a {
+          
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            color: white;
+            text-decoration: none;
+            height: 100%;
+        }
+
         .nav {
             position: relative;
-            margin-right: 30px;
+
             height: 100%;
             width: 80px;
 
@@ -106,7 +202,7 @@
             margin-right: 120px;
         }
 
-        .nav:hover {
+        a:hover {
             position: relative;
             z-index: 2;
             cursor: pointer;
@@ -120,7 +216,7 @@
         }
 
         .home {
-            height: 100vh;
+            height: 600px;
             border: 1px solid red transparent;
 
 
@@ -247,6 +343,12 @@
 
         }
     </style>
+    <script>
+        function about_scrool() {
+            document.getElementsByClassName('about')[0].scrollIntoView({ "behavior": "smooth" })
+
+        }
+    </script>
 </body>
 
 </html>
